@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Space</title>
+</head>
+<body>
+    <h1>Pastelería Space</h1>
+    <h4>Un mundo de sabor</h4>
+    <h2>Realice su pedido</h2>
+    <h3>Paso 1: Elige tu pastel</h3>
+    <table>
+        <tr>
+            <th>Elección</th>
+            <th>Pasteles</th>
+            <th>Descripción</th>
+            <th>Imágen</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><input type="radio" id="chocolate" name="pasteles" value="Chocolate"></td>
+            <td>Chocolate</td>
+            <td>Delicioso pastel cubierto completamente de chocolate y por dentro pan de sabor chocolate</td>
+            <td><img src="images/pasteles/chocolatepastel.jpg" alt="Pastel de chocolate" width="30%"></td>
+            <td>$199</td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="fresa" name="pasteles" value="Fresa"></td>
+            <td>Fresa</td>
+            <td>Pastel cubierto en la superficie con mermelada de fresas, en los laterales con betún de vainilla, relleno de mermelada de fresa y pan de vainilla</td>
+            <td><img src="images/pasteles/fresapastel.jpg" alt="Pastel de fresa" width="30%"></td>
+            <td>$179</td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="vanilla-nuez" name="pasteles" value="Vainilla-Nuez"></td>
+            <td>Vainilla con Nuez</td>
+            <td>Pastel con cubierta de betún de vainilla y nuez, por dentro pan de vanilla</td>
+            <td><img src="images/pasteles/nuezpastel.jpg" alt="Pastel de vainilla con nuez" width="30%"></td>
+            <td>$199</td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="mango" name="pasteles" value="Mango"></td>
+            <td>Mango</td>
+            <td>Pastel cubierto con queso crema sabor mango, en la superficie mermelada de mango y por dentro pan de tres leches con relleno de mermelada de mango</td>
+            <td><img src="images/pasteles/mangopastel.jpg" alt="Pastel de mango" width="30%"></td>
+            <td>$229</td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="cuatro-sabores" name="pasteles" value="Cuatro-sabores"></td>
+            <td>Combinado</td>
+            <td>Pastel que reune el sabor del mango y la fresa en una división intercalada de cuatro partes con fresa y posteriormente mango, betun de vainilla y pan de vainilla de tres leches</td>
+            <td><img src="images/pasteles/combinadopastel.jpg" alt="Pastel de fresa y mango" width="30%"></td>
+            <td>$199</td>
+        </tr>
+    </table>
+    <h3>Paso 2: Adornos</h3>
+    <table>
+        <tr>
+            <th>Cantidad</th>
+            <th>Adorno</th>
+            <th>Descripción</th>
+            <th>Imagen</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="num-feliz-adorno" name="num-feliz-adorno" style="width: 4em;"><br><br></td>
+            <td>Vara Feliz Cumpleaños</td>
+            <td>Vara que se encaja en la superficie con frase de "Feliz Cumpleaños"</td>
+            <td><img src="images/adornos/felizadorno.jpg" alt="Adorno de cumpleaños" width="30%"></td>
+            <td>$29</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="num-velanum-adorno" name="num-velanum-adorno" style="width: 4em;"><br><br></td>
+            <td>Vela numeérica del 0 al 9</td>
+            <td>Vela que se posiciona en la superficie, con numeros del 0 al 9, el/los numero(s) deseado(s) se especificarán en las observaciones</td>
+            <td><img src="images/adornos/velanumeroadorno.jpg" alt="Vela numérica" width="30%"></td>
+            <td>$19</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="num-vela-adorno" name="num-vela-adorno" style="width: 4em;"><br><br></td>
+            <td>Vela Común</td>
+            <td>Vela normal que se encaja en la superficie</td>
+            <td><img src="images/adornos/velaadorno.jpg" alt="Vela común" width="30%"></td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="num-feliz-adorno" name="num-feliz-adorno" style="width: 4em;"><br><br></td>
+            <td>Vela con chispas</td>
+            <td>Vela que al encenderse suelta chispas. PRECAUCUIÓN: MANTENERSE ALEJADO AL MENOS 1m DE LA VELA</td>
+            <td><img src="images/adornos/velachispasadorno.jpg" alt="Adorno de cumpleaños" width="30%"></td>
+            <td>$39</td>
+        </tr>
+    </table>
+    <h3>Paso 3: Combina sabores (¡NUEVO!)</h3>
+    <table>
+        <tr>
+            <th>Sabor 1</th>
+            <th>Sabor 2</th>
+            <th>Sabor 3</th>
+        </tr>
+        <tr>
+            <td>
+                <select id="sabor1" name="sabor1">
+                <option value="fresa">Fresa</option>
+                <option value="vainilla">Vainilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="mango">Mango</option>
+                <option value="nuez">Nuez</option>
+                </select>
+            </td>
+            <td>
+                <select id="sabor2" name="sabor2">
+                <option value="fresa">Fresa</option>
+                <option value="vainilla">Vainilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="mango">Mango</option>
+                <option value="nuez">Nuez</option>
+                </select>
+            </td>
+            <td>
+                <select id="sabor2" name="sabor2">
+                <option value="fresa">Fresa</option>
+                <option value="vainilla">Vainilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="mango">Mango</option>
+                <option value="nuez">Nuez</option>
+                <option value="nada">(Ninguno)</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <h3>Paso 4: Escribe tus observaciones</h3>
+    <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+    <h3>Paso 5: Escribe tus datos de contacto</h3>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apelido">Apellido:</label>
+        <input type="text" id="apelido" name="apelido"><br>
+        <label for="apelido">Correo electrónico:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" name="tel" maxlength="10"><br>
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+<footer>
+    <h3>Contacto:</h3>
+    <p>Dirección: Av. Marte #123,  Fracc. Las Galaxias, Marterrey, N.L.</p>
+    <p>Telefono: 8121212122</p>
+    <h3>Horarios de atención: </h3>
+    <table>
+        <tr>
+            <th>Día</th>
+            <th>Horario</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td>10:00 - 19:00</td>
+        </tr>
+        <tr>
+            <td>Martes</td>
+            <td>10:00 - 19:00</td>
+        </tr>
+        <tr>
+            <td>Miercoles</td>
+            <td>10:00 - 20:00</td>
+        </tr>
+        <tr>
+            <td>Jueves</td>
+            <td>10:00 - 20:00</td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>10:00 - 22:00</td>
+        </tr>
+        <tr>
+            <td>Sabado</td>
+            <td>10:00 - 22:00</td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td>9:00 - 22:00</td>
+        </tr>
+    </table>
+</footer>
+</html>
